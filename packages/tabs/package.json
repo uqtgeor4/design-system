@@ -38,5 +38,9 @@
   },
   "dependencies": {
     "@uqds/core": "^0.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "jsdom": "^16.4.0"
   }
 }

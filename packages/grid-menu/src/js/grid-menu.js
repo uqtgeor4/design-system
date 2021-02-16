@@ -1,57 +1,53 @@
 'use strict';
 
-/**
+/*
  * Equaliser script extracted and modified from Equalizer
  * (https://github.com/skrajewski/Equalizer).
  * A simple way to keep elements at equal height!
  * 
  */
-var gridMenuEqualiser = (function () {
-  "use strict";
 
-  /**
-   * Initial equalizer
-   *
-   * @param {(String|NodeList)} [blocks="grid-menu--equalised"] - selector
-   * string or list of DOM nodes.
-   * @constructor
-   */
-  function gridMenuEqualiser(blocks) {
-    if (!blocks) {
-      blocks = ".grid-menu--equalised";
-    }
-
-    if (!(this instanceof gridMenuEqualiser)) {
-      return new gridMenuEqualiser(blocks);
-    }
-
-    if (typeof blocks === "string") {
-      this.blocks = document.querySelectorAll(blocks);
-      return;
-    }
-
-    this.blocks = blocks;
+/**
+ * 
+ * Initial equalizer
+ *
+ * @param {(String|NodeList)} [blocks="grid-menu--equalised"] - selector
+ * string or list of DOM nodes.
+ * @constructor
+ */
+function gridMenuEqualiser(blocks) {
+  if (!blocks) {
+    blocks = ".grid-menu--equalised";
   }
 
-  /**
-   * Recalculate height of blocks
-   */
-  gridMenuEqualiser.prototype.align = function () {
-    var maxHeight = 0,
-      max = this.blocks.length,
-      i;
+  if (!(this instanceof gridMenuEqualiser)) {
+    return new gridMenuEqualiser(blocks);
+  }
 
-    for (i = 0; i < max; i++) {
-      this.blocks[i].style.minHeight = "";
-      maxHeight = Math.max(maxHeight, this.blocks[i].clientHeight);
-    }
+  if (typeof blocks === "string") {
+    this.blocks = document.querySelectorAll(blocks);
+    return;
+  }
 
-    for (i = 0; i < max; i++) {
-      this.blocks[i].style.minHeight = maxHeight + "px";
-    }
-  };
+  this.blocks = blocks;
+}
 
-  return gridMenuEqualiser;
-}());
+/**
+ * Recalculate height of blocks
+ */
+gridMenuEqualiser.prototype.align = function () {
+  var maxHeight = 0,
+    max = this.blocks.length,
+    i;
+
+  for (i = 0; i < max; i++) {
+    this.blocks[i].style.minHeight = "";
+    maxHeight = Math.max(maxHeight, this.blocks[i].clientHeight);
+  }
+
+  for (i = 0; i < max; i++) {
+    this.blocks[i].style.minHeight = maxHeight + "px";
+  }
+};
 
 export {gridMenuEqualiser as default};
