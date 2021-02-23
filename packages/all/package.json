@@ -1,6 +1,6 @@
 {
   "name": "@uqds/all",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "package to import all components (including core)",
   "keywords": [
     "uqds",
@@ -36,21 +36,21 @@
     "url": "https://github.com/uq-its-ss/design-system/issues"
   },
   "dependencies": {
-    "@uqds/accordion": "^1.0.0",
-    "@uqds/alert": "^1.0.0",
-    "@uqds/blockquote": "^1.0.0",
-    "@uqds/body": "^1.0.0",
-    "@uqds/breadcrumb": "^1.0.0",
-    "@uqds/button": "^1.0.0",
-    "@uqds/card": "^1.0.0",
-    "@uqds/core": "^1.0.0",
-    "@uqds/footer": "^1.0.0",
-    "@uqds/form": "^1.0.0",
-    "@uqds/grid-menu": "^1.0.0",
-    "@uqds/icon": "^1.0.0",
-    "@uqds/lists": "^1.0.0",
-    "@uqds/pagination": "^1.0.0",
-    "@uqds/pane": "^1.0.0",
-    "@uqds/tabs": "^1.0.0"
+    "@uqds/accordion": "^2.0.0",
+    "@uqds/alert": "^2.0.0",
+    "@uqds/blockquote": "^2.0.0",
+    "@uqds/body": "^2.0.0",
+    "@uqds/breadcrumb": "^2.0.0",
+    "@uqds/button": "^2.0.0",
+    "@uqds/card": "^2.0.0",
+    "@uqds/core": "^2.0.0",
+    "@uqds/footer": "^2.0.0",
+    "@uqds/form": "^2.0.0",
+    "@uqds/grid-menu": "^2.0.0",
+    "@uqds/icon": "^2.0.0",
+    "@uqds/lists": "^2.0.0",
+    "@uqds/pagination": "^2.0.0",
+    "@uqds/pane": "^2.0.0",
+    "@uqds/tabs": "^2.0.0"
   }
 }
